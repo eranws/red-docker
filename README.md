@@ -2,7 +2,7 @@
 
 # Run 
 
-After installingd docker, Type this in your shell: (three images are provided)
+After installingd docker, Type any of these in your shell:
 
 1. red on ubuntu
 ```bash
@@ -30,14 +30,14 @@ docker run -it rebol2-alpine
 
 5. hello.red on alpine
 ```
-docker build https://github.com/eranws/red-docker.git#master:console-red-rebol2-alpine -t console-red-rebol2-alpine
-docker run -it console-red-rebol2-alpine
-```
-
-6. rebol2 on alpine
-```
 docker build https://github.com/eranws/red-docker.git#master:hello-red-rebol2-alpine -t hello-red-rebol2-alpine
 docker run -it hello-red-rebol2-alpine
+```
+
+6. red console on alpine
+```
+docker build https://github.com/eranws/red-docker.git#master:console-red-rebol2-alpine -t console-red-rebol2-alpine
+docker run -it console-red-rebol2-alpine
 ```
 
 
