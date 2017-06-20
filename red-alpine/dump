@@ -1,0 +1,36 @@
+   0 ls
+   1 apk add --update curl \
+   2   && curl http://rebolsource.net/downloads/experimental/r3-linux-x64-gbf237fc-static > r3 \
+   3   && chmod +x r3
+   4 ./r3 
+   5 file
+   6 apk add file
+   7 file /r3 
+   8 http://rebolsource.net/downloads/linux-x86/r3-g25033f8
+   9 curl http://rebolsource.net/downloads/linux-x86/r3-g25033f8 > r32
+  10 chmod r32 +x
+  11 chmod +x r32
+  12 file r32
+  13 ./r32 
+  14 ls
+  15 ./r3
+  16 ./r32
+  17 ls
+  18 ls -l
+  19 ldd r32
+  20 ldd r3
+  21 file /bin/busybox
+  22 busybox
+  23 wget http://static.red-lang.org/dl/linux/red-062
+  24 chmod +x red-062 
+  25 ./red-062 
+  26 file red-062 
+  27 file /bin/busybox
+  28 ln -s /lib/ld-musl-i386.so.1 /lib/ld-linux.so.2
+  29 ls /lib/
+  30 ./red-062 
+  31 ldd red-062 
+  32 ./r3
+  33 ./r32
+  34 ls
+  35 history

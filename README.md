@@ -22,7 +22,7 @@ docker build https://github.com/eranws/red-docker.git#master:r3-alpine -t r3-alp
 docker run -it r3-alpine
 ```
 
-3. rebol2 on alpine
+4. rebol2 on alpine
 ```
 docker build https://github.com/eranws/red-docker.git#master:rebol2-alpine -t rebol2-alpine
 docker run -it rebol2-alpine
