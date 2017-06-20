@@ -12,4 +12,4 @@ RUN dpkg --add-architecture i386 && \
     ./red-062
     # ^ this will inflate red on build to load quickly (first time takes ~20 seconds)
 
-CMD ['./red-062']
+CMD ["./red-062"]
