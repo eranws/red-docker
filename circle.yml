@@ -5,8 +5,8 @@ machine:
 dependencies:
   override:
     - docker info
-    - docker build --rm=false -t eranws/red-ubuntu .
-
+    - docker build --rm=false -t eranws/red-ubuntu red-ubuntu
+    
 test:
   override:
   # - docker run -d -p 9200:9200 circleci/elasticsearch; sleep 10
