@@ -2,7 +2,7 @@
 
 # Run 
 
-After installingd docker, Type any of these in your shell:
+After installing docker, type any of these in your shell:
 
 1. red on ubuntu
 ```bash
