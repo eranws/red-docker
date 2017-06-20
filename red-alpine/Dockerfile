@@ -11,8 +11,7 @@ CMD ["./red-062"]
 # ** Near: script: decapsulate
 # if none? script
 
-## issue #534?... not working
-
+## workaround for issue #543?... not working
 # echo "#!/bin/sh" >> red.sh && \
 # echo "red-062 $@" >> red.sh && \
 # chmod +x red.sh
