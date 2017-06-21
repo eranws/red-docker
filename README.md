@@ -1,6 +1,8 @@
 # red-docker
 
-[![CircleCI](https://circleci.com/gh/eranws/red-docker.svg?style=svg)](https://circleci.com/gh/eranws/red-docker)
+`master` [![CircleCI](https://circleci.com/gh/eranws/red-docker.svg?style=svg)](https://circleci.com/gh/eranws/red-docker)
+
+`gui-console` [![CircleCI](https://circleci.com/gh/eranws/red-docker/tree/gui-console.svg?style=svg)](https://circleci.com/gh/eranws/red-docker/tree/gui-console)
 
 # Run 
 
