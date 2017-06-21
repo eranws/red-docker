@@ -1,14 +1,13 @@
 # compile hello.red sample using rebol
 FROM rebol2-alpine
 
-RUN cd releases/rebol-core/ && \
-    wget http://static.red-lang.org/dl/auto/red-20jun17-599e6f9.tar.gz && \
-    tar -xvf red-20jun17-599e6f9.tar.gz && \
-    ./rebol red.r tests/hello.red && \
-    apk update && \
-    apk add curl && \
+RUN apk update && \
+    apk add curl
+
+RUN curl -sL https://github.com/red/red/archive/master.tar.gz | tar xz
+
+RUN cd red-master && \
+    rebol red.r tests/hello.red && \
     chmod +x hello
 
-CMD ["releases/rebol-core/hello"]
-
-## TODO: fix paths, use working dir, etc. (remove "releases/rebol-core/" from parent image)
+CMD ["./red-master/hello"]

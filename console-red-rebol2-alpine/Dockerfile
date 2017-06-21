@@ -1,9 +1,6 @@
 # compile console.red using rebol
 FROM rebol2-alpine
 
-RUN cp releases/rebol-core/rebol /bin
-# move this to rebol2-alpine export
-
 RUN apk update && \
     apk add curl
 
@@ -14,5 +11,3 @@ RUN cd red-master && \
     chmod +x console
 
 CMD ["./red-master/console"]
-
-## TODO: fix paths, use working dir, etc. (remove "releases/rebol-core/" from parent image)
