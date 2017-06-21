@@ -6,7 +6,7 @@ dependencies:
   override:
     - docker info
     # - docker build --rm=false -t eranws/red-ubuntu red-ubuntu
-    - docker build --rm=false https://github.com/eranws/red-docker.git#master:rebol2-alpine -t rebol2-alpine
+    - docker build --rm=false -t eranws/rebol2-alpine rebol2-alpine
     
 test:
   override:
