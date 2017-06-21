@@ -5,13 +5,15 @@ machine:
 dependencies:
   override:
     - docker info
-    - docker build --rm=false -t eranws/red-ubuntu red-ubuntu
+    # - docker build --rm=false -t eranws/red-ubuntu red-ubuntu
+    # - docker build --rm=false -t eranws/rebol2-alpine rebol2-alpine
     
 test:
   override:
   # - docker run -d -p 9200:9200 circleci/elasticsearch; sleep 10
   # - curl --retry 10 --retry-delay 5 -v http://localhost:9200
     - docker build https://github.com/eranws/red-docker.git#master:red-ubuntu
+    - docker build https://github.com/eranws/red-docker.git#master:rebol2-alpine
 
 # deployment:
 #   hub:
