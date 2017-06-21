@@ -1,14 +1,18 @@
 # compile console.red using rebol
 FROM rebol2-alpine
 
-RUN cd releases/rebol-core/ && \
-    wget http://static.red-lang.org/dl/auto/red-20jun17-599e6f9.tar.gz && \
-    tar -xvf red-20jun17-599e6f9.tar.gz && \
-    ./rebol -s red.r -r environment/console/console.red && \
-    apk update && \
-    apk add curl && \
+RUN cp releases/rebol-core/rebol /bin
+# move this to rebol2-alpine export
+
+RUN apk update && \
+    apk add curl
+
+RUN curl -sL https://github.com/red/red/archive/master.tar.gz | tar xz
+
+RUN cd red-master && \
+    rebol -s red.r -r environment/console/console.red && \
     chmod +x console
 
-CMD ["releases/rebol-core/console"]
+CMD ["./red-master/console"]
 
 ## TODO: fix paths, use working dir, etc. (remove "releases/rebol-core/" from parent image)
