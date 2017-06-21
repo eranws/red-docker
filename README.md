@@ -1,5 +1,7 @@
 # red-docker
 
+[![CircleCI](https://circleci.com/gh/eranws/red-docker.svg?style=svg)](https://circleci.com/gh/eranws/red-docker)
+
 # Run 
 
 After installing docker, type any of these in your shell:
