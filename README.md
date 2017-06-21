@@ -4,6 +4,8 @@
 
 `gui-console` [![CircleCI](https://circleci.com/gh/eranws/red-docker/tree/gui-console.svg?style=svg)](https://circleci.com/gh/eranws/red-docker/tree/gui-console)
 
+`red-alpine` [![CircleCI](https://circleci.com/gh/eranws/red-docker/tree/red-alpine.svg?style=svg)](https://circleci.com/gh/eranws/red-docker/tree/red-alpine)
+
 # Run 
 
 After installing docker, type any of these in your shell:
