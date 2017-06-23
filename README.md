@@ -6,13 +6,21 @@
 
 `red-alpine` [![CircleCI](https://circleci.com/gh/eranws/red-docker/tree/red-alpine.svg?style=svg)](https://circleci.com/gh/eranws/red-docker/tree/red-alpine)
 
-`console-alpine` ![CircleCI](https://circleci.com/gh/eranws/red-docker/tree/console-alpine.svg?style=svg)
 
-`console-red-rebol2-ubuntu` ![CircleCI](https://circleci.com/gh/eranws/red-docker/tree/console-red-rebol2-ubuntu.svg?style=svg)
 
-`run-all-red-rebol2-alpine` ![CircleCI](https://circleci.com/gh/eranws/red-docker/tree/run-all-red-rebol2-alpine.svg?style=svg)
 
-`run-all-red-rebol2-ubuntu` ![CircleCI](https://circleci.com/gh/eranws/red-docker/tree/run-all-red-rebol2-ubuntu.svg?style=svg)
+`console-alpine` [![CircleCI](https://circleci.com/gh/eranws/red-docker/tree/console-alpine.svg?style=svg)](https://circleci.com/gh/eranws/red-docker/tree/console-alpine)
+
+
+`console-red-rebol2-ubuntu` [![CircleCI](https://circleci.com/gh/eranws/red-docker/tree/console-red-rebol2-ubuntu.svg?style=svg)](https://circleci.com/gh/eranws/red-docker/tree/console-red-rebol2-ubuntu)
+
+`run-all-red-rebol2-alpine` [![CircleCI](https://circleci.com/gh/eranws/red-docker/tree/run-all-red-rebol2-alpine.svg?style=svg)](https://circleci.com/gh/eranws/red-docker/tree/run-all-red-rebol2-alpine)
+
+`run-all-red-rebol2-ubuntu` [![CircleCI](https://circleci.com/gh/eranws/red-docker/tree/run-all-red-rebol2-ubuntu.svg?style=svg)](https://circleci.com/gh/eranws/red-docker/tree/run-all-red-rebol2-ubuntu)
+
+
+
+
 
 
 
