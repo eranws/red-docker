@@ -15,7 +15,7 @@ test:
     # - docker build https://github.com/eranws/red-docker.git#master:r3-alpine
     # - docker build https://github.com/eranws/red-docker.git#master:hello-red-rebol2-alpine
     # - docker build https://github.com/eranws/red-docker.git#master:console-red-rebol2-alpine
-    - docker build https://github.com/eranws/red-docker.git#console-red-rebol2-alpine:console-red-rebol2-alpine
+    - docker build https://github.com/eranws/red-docker.git#console-red-rebol2-ubuntu:console-red-rebol2-ubuntu
 
   # Time consuming, low risk:
   # - docker build https://github.com/eranws/red-docker.git#master:red-ubuntu
