@@ -1,16 +1,15 @@
-# compile console.red using rebol on ubuntu
+# compile console.red using rebol on debian
+FROM debian
 
-FROM ubuntu
-
-# from red-ubuntu
 RUN dpkg --add-architecture i386 && \
     apt-get update && \
     apt-get install -y \
-      libc6:i386 \
-      libcurl3:i386 \
-      wget \
-      curl
-
+    lib32z1 \
+    libc6:i386 \
+    libcurl3:i386 \
+    curl \
+    wget
+    
 # get rebol 2
 RUN wget http://www.rebol.com/downloads/v278/rebol-core-278-4-2.tar.gz && \
     tar -xvf rebol-core-278-4-2.tar.gz && \
@@ -19,9 +18,6 @@ RUN wget http://www.rebol.com/downloads/v278/rebol-core-278-4-2.tar.gz && \
 # get red latest master tarball
 RUN curl -sL https://github.com/red/red/archive/master.tar.gz | tar xz
 
-# compile red-console
-RUN cd red-master && \
-    rebol -s red.r -r environment/console/console.red && \
-    chmod +x console
+CMD ["rebol", "-s", "./red-master/run-all.r"]
 
-CMD ["./red-master/console"]
+
