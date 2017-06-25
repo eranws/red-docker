@@ -18,6 +18,6 @@ RUN wget http://www.rebol.com/downloads/v278/rebol-core-278-4-2.tar.gz && \
 # get red latest master tarball
 RUN curl -sL https://github.com/red/red/archive/master.tar.gz | tar xz
 
-CMD ["rebol", "-s", "./red-master/run-all.r"]
+CMD ["rebol", "-s", "./red-master/run-all.r", "--batch"]
 
 

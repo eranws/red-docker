@@ -8,7 +8,7 @@ jobs:
     steps:
       - run:
           name: run-all
-          command: 'rebol -s /red-master/run-all.r'
+          command: 'rebol -s /red-master/run-all.r --batch'
       - store_artifacts:
           path: /red-master/quick-test/quick-test.log
           prefix: tests
