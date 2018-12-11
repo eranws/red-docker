@@ -3,7 +3,7 @@ jobs:
   build:
     working_directory: /
     docker:
-      - image: eranws/run-all-red-rebol2-debian
+      - image: eranws/run-all-red-rebol2-ubuntu
 
     steps:
       - run:
