@@ -1,5 +1,7 @@
 # red-docker
 
+`master` ![Docker Image CI](https://github.com/eranws/red-docker/workflows/Docker%20Image%20CI/badge.svg?branch=master)
+
 `master` [![CircleCI](https://circleci.com/gh/eranws/red-docker.svg?style=svg)](https://circleci.com/gh/eranws/red-docker)
 
 `gui-console` [![CircleCI](https://circleci.com/gh/eranws/red-docker/tree/gui-console.svg?style=svg)](https://circleci.com/gh/eranws/red-docker/tree/gui-console)
