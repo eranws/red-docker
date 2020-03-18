@@ -1,0 +1,19 @@
+name: Run all red tests using Rebol2 on Ubuntu
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: run-all-red-rebol2-ubuntu
+      run: docker build . --file run-all-red-rebol2-ubuntu/Dockerfile -t run-all-red-rebol2-ubuntu:$(date +%s)
+      
