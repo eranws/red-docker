@@ -14,7 +14,10 @@ RUN wget http://www.rebol.com/downloads/v278/rebol-core-278-4-2.tar.gz && \
     tar -xvf rebol-core-278-4-2.tar.gz && \
     cp releases/rebol-core/rebol /bin
 
-RUN curl -sL https://github.com/red/red/archive/master.tar.gz | tar xz
+RUN mkdir red-master && \
+    cd red-master && \
+    wget https://static.red-lang.org/dl/auto/red-latest-source.tar.gz && \
+    tar -xvf red-latest-source.tar.gz
 
-CMD ["rebol", "-s", "./red-master/run-all.r", "--batch"]
+RUN rebol -s ./red-master/run-all.r --batch
 
