@@ -7,8 +7,7 @@ RUN dpkg --add-architecture i386 && \
     apt-get install -y \
       libc6:i386 \
       libcurl3:i386 \
-      wget \
-      curl
+      wget
 
 RUN wget http://www.rebol.com/downloads/v278/rebol-core-278-4-2.tar.gz && \
     tar -xvf rebol-core-278-4-2.tar.gz && \
